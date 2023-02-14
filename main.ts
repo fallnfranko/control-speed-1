@@ -1,0 +1,18 @@
+basic.forever(function () {
+    Tinybit.CarCtrlSpeed(Tinybit.CarState.Car_Run, 0)
+    basic.pause(2000)
+    Tinybit.CarCtrlSpeed(Tinybit.CarState.Car_Run, 50)
+    basic.pause(2000)
+    Tinybit.CarCtrlSpeed(Tinybit.CarState.Car_Run, 100)
+    basic.pause(2000)
+    Tinybit.CarCtrlSpeed(Tinybit.CarState.Car_Run, 150)
+    basic.pause(2000)
+    Tinybit.CarCtrlSpeed(Tinybit.CarState.Car_Run, 200)
+    basic.pause(2000)
+    Tinybit.CarCtrlSpeed(Tinybit.CarState.Car_Run, 255)
+    basic.pause(5000)
+})
+basic.forever(function () {
+    Tinybit.RGB_Car_Program().showColor(neopixel.colors(NeoPixelColors.Green))
+    Tinybit.RGB_Car_Big2(255, 0, 250)
+})
